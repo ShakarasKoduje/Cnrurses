@@ -7,19 +7,22 @@ int main(){
 
   initscr();
   raw();
-
-  mvprintw(3,3,"Hello world!");
-  move(5,5);
-
-  printw("hahahahaha");
-  move(0,0);
-  int litera = getch();
-  move(9,5);
-
+  noecho();
+  keypad(stdscr, TRUE);
+  WINDOW * mainwin = newwin(3,50,10,10);
+  box(mainwin,0,0);
+  mvwprintw(mainwin,0,0, "\t\tYour movement Captain Omega!");
+  mvwprintw(mainwin, 1,5, "Kamilka jest malutka");
   refresh();
-  printw("%c", litera);
+  wrefresh(mainwin);
 
-  printw("Dodane o 15:19 w repozytorium github");
+
+  //mvprintw(3,3,"Hello world!");
+
+
+
+
+
 
   refresh();
 
