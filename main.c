@@ -16,7 +16,9 @@ int main(){
   int litera = getch();
   move(9,5);
 
+  refresh();
   printw("%c", litera);
+
   printw("Dodane o 15:19 w repozytorium github");
 
   refresh();
