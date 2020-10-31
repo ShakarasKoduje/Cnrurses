@@ -23,6 +23,13 @@ int main(){
 
 
 
+<<<<<<< HEAD
+=======
+  refresh();
+  printw("%c", litera);
+
+  printw("Dodane o 15:19 w repozytorium github");
+>>>>>>> b7a774854b4427df983a2e393747d7d18957623e
 
   refresh();
 
